@@ -10,7 +10,7 @@
 	<h4>Photosets</h4>
 	<ul>
 	{foreach from=$photosets item=photoset}
-	<li><strong>{$photoset.title}</strong> - id: [{$photoset.id}] <code>{FlickrMadeSimple photoset="{$photoset.id}"}</code></li>
+	<li><strong>{$photoset.title}</strong> - id: [{$photoset.id}] <code>{ldelim}FlickrMadeSimple photoset="{$photoset.id}"{rdelim}</code></li>
 	{/foreach}
 	</ul>
 </pre>
